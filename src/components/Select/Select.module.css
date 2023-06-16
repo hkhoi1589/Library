@@ -1,0 +1,64 @@
+.select {
+	@apply relative overflow-hidden block w-[330px] h-full text-xs shadow-[0px_1em_2em_-1.5em_rgba(0,0,0,0.5)] m-auto rounded-[3px] border-b-0;
+}
+.select > i.toggle {
+	@apply absolute z-[4] text-[#ccc] right-[1.5em] top-[1.6em];
+}
+.select .title,
+.select .placeholder {
+	@apply relative block w-full h-full cursor-pointer px-[2em] py-[1.5em] border-t-[rgba(0,0,0,0.05)] border-t border-solid;
+	background: rgba(255, 255, 255, 1);
+}
+.select > input {
+	@apply absolute z-[1] w-full h-full block opacity-0 cursor-pointer left-0 top-0 disabled:cursor-no-drop;
+}
+.select > input:checked ~ i.toggle.icon_arrow_down {
+	@apply hidden;
+}
+.select > input:checked ~ i.toggle.icon_arrow_up {
+	@apply block;
+}
+.select > input:checked div.options label.option .title {
+	@apply hidden;
+}
+.select > input:not(:checked) {
+	@apply z-[4];
+}
+.select > input:not(:checked) ~ label.option > span.title {
+	@apply hidden;
+}
+.select > input:not(:checked) ~ i.toggle.icon_arrow_up {
+	@apply hidden;
+}
+.select > input:not(:checked) ~ i.toggle.icon_arrow_down {
+	@apply block;
+}
+.select > span.placeholder {
+	@apply relative z-0 inline-block w-full text-[#999] border-t-0;
+}
+.select label.option {
+	@apply block overflow-hidden z-[1] w-full transition-all duration-[1s] ease-[ease-out];
+}
+.select label.option span.title {
+	@apply relative z-[2] transition-[background] duration-[0.3s] ease-[ease-out] hover:text-white hover:shadow-[inset_0px_1px_0px_rgba(0,0,0,0.1)];
+}
+.select label.option span.title i.icon {
+	@apply text-[rgba(146,168,209,1)] pr-2;
+}
+.select label.option span.title:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+.select label.option input {
+	@apply hidden;
+}
+.select label.option input:checked ~ span.title {
+	@apply absolute block z-[3] text-xs shadow-none text-inherit w-full border-t-0 top-0;
+	background: #fff;
+}
+.select label.option input:disabled ~ span.title {
+	@apply text-[#aaa] hover:text-[#aaa] hover:cursor-no-drop;
+	background: #f9f9f9 !important;
+}
+.select label.option input:disabled ~ span.title:hover {
+	background: none;
+}

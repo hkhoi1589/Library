@@ -1,0 +1,256 @@
+.btn {
+	@apply w-[130px] h-10 text-white font-medium cursor-pointer transition-all duration-[0.3s] ease-[ease] relative inline-block shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5),7px_7px_20px_0px_rgba(0,0,0,0.1),4px_4px_5px_0px_rgba(0,0,0,0.1)] px-[25px] py-2.5 rounded-[5px];
+}
+
+/* 1 */
+.btn_1 {
+	@apply border-[none];
+	background: rgb(6, 14, 131);
+	background: linear-gradient(0deg, rgba(6, 14, 131, 1) 0%, rgba(12, 25, 180, 1) 100%);
+}
+.btn_1:hover {
+	background: rgb(0, 3, 255);
+	background: linear-gradient(0deg, rgba(0, 3, 255, 1) 0%, rgba(2, 126, 251, 1) 100%);
+}
+
+/* 2 */
+.btn_2 {
+	@apply border-[none] before:h-[0%] before:w-0.5 hover:shadow-[4px_4px_6px_0_rgba(255,255,255,0.5),-4px_-4px_6px_0_rgba(116,125,136,0.5),inset_-4px_-4px_6px_0_rgba(255,255,255,0.2),inset_4px_4px_6px_0_rgba(0,0,0,0.4)];
+	background: rgb(96, 9, 240);
+	background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+}
+
+/* 3 */
+.btn_3 {
+	@apply w-[130px] h-10 leading-[42px] p-0 border-[none] before:h-[0%] before:w-0.5 after:w-[0%] after:h-0.5 hover:shadow-none hover:before:h-full hover:after:w-full;
+	background: rgb(0, 172, 238);
+	background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+}
+.btn_3 span {
+	@apply relative block w-full h-full hover:text-[rgba(2,126,251,1)] before:w-0.5 before:h-[0%] after:w-[0%] after:h-0.5 hover:before:h-full hover:after:w-full;
+}
+.btn_3:before,
+.btn_3:after {
+	@apply absolute content-[""] transition-all duration-[0.3s] ease-[ease] right-0 top-0;
+	background: rgba(2, 126, 251, 1);
+}
+.btn_3:hover {
+	background: transparent;
+}
+.btn_3 span:before,
+.btn_3 span:after {
+	@apply absolute content-[""] transition-all duration-[0.3s] ease-[ease] left-0 bottom-0;
+	background: rgba(2, 126, 251, 1);
+}
+
+/* 4 */
+.btn_4 {
+	@apply bg-[#4dccc6] bg-[linear-gradient(315deg,#4dccc6_0%,#96e4df_74%)] leading-[42px] p-0 border-[none] hover:bg-[#89d8d3] hover:bg-[linear-gradient(315deg,#89d8d3_0%,#03c8a8_74%)] before:h-[0%] before:w-[0.1px] after:w-[0%] after:h-[0.1px] hover:before:h-full hover:after:w-full;
+}
+.btn_4 span {
+	@apply relative block w-full h-full before:w-[0.1px] before:h-[0%] after:w-[0%] after:h-[0.1px] hover:before:h-full hover:after:w-full;
+}
+.btn_4:before,
+.btn_4:after {
+	@apply absolute content-[""] shadow-[4px_4px_6px_0_rgba(255,255,255,0.9),-4px_-4px_6px_0_rgba(116,125,136,0.2),inset_-4px_-4px_6px_0_rgba(255,255,255,0.9),inset_4px_4px_6px_0_rgba(116,125,136,0.3)] transition-all duration-[0.3s] ease-[ease] right-0 top-0;
+}
+.btn_4 span:before,
+.btn_4 span:after {
+	@apply absolute content-[""] shadow-[4px_4px_6px_0_rgba(255,255,255,0.9),-4px_-4px_6px_0_rgba(116,125,136,0.2),inset_-4px_-4px_6px_0_rgba(255,255,255,0.9),inset_4px_4px_6px_0_rgba(116,125,136,0.3)] transition-all duration-[0.3s] ease-[ease] left-0 bottom-0;
+}
+
+/* 5 */
+.btn_5 {
+	@apply w-[130px] h-10 leading-[42px] p-0 border-[none] hover:text-[#f0094a] hover:shadow-none after:left-0 after:right-[inherit] after:top-[inherit] after:bottom-0;
+	background: rgb(255, 27, 0);
+	background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+.btn_5:hover {
+	background: transparent;
+}
+.btn_5:before,
+.btn_5:after {
+	@apply content-[''] absolute h-0.5 w-0 shadow-[-1px_-1px_5px_0px_#fff,7px_7px_20px_0px_#0003,4px_4px_5px_0px_#0002] transition-[400ms] duration-[ease] ease-[all] right-0 top-0;
+	background: #f0094a;
+}
+.btn_5:after {
+	@apply left-0 right-[inherit] top-[inherit] bottom-0;
+}
+.btn_5:hover:before,
+.btn_5:hover:after {
+	@apply w-full transition-[800ms] duration-[ease] ease-[all];
+}
+
+/* 6 */
+.btn_6 {
+	@apply leading-[42px] p-0 border-[none] before:transition-all before:duration-500 before:ease-[ease] before:right-0 before:top-0 after:transition-all after:duration-500 after:ease-[ease] after:left-0 after:bottom-0 hover:text-[#76aef1] hover:shadow-none hover:before:transition-all hover:before:duration-500 hover:before:ease-[ease] hover:before:h-full hover:after:transition-all hover:after:duration-500 hover:after:ease-[ease] hover:after:h-full;
+	background: rgb(247, 150, 192);
+	background: radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgba(118, 174, 241, 1) 100%);
+}
+.btn_6 span {
+	@apply relative block w-full h-full before:w-[0%] before:h-[0.5px] before:transition-all before:duration-500 before:ease-[ease] before:left-0 before:top-0 after:w-[0%] after:h-[0.5px] after:transition-all after:duration-500 after:ease-[ease] after:right-0 after:bottom-0 hover:before:w-full hover:after:w-full;
+}
+.btn_6:before,
+.btn_6:after {
+	@apply absolute content-[""] h-[0%] w-px shadow-[-1px_-1px_20px_0px_rgba(255,255,255,1),-4px_-4px_5px_0px_rgba(255,255,255,1),7px_7px_20px_0px_rgba(0,0,0,0.4),4px_4px_5px_0px_rgba(0,0,0,0.3)];
+}
+.btn_6:hover {
+	background: transparent;
+}
+.btn_6 span:before,
+.btn_6 span:after {
+	@apply absolute content-[""] shadow-[-1px_-1px_20px_0px_rgba(255,255,255,1),-4px_-4px_5px_0px_rgba(255,255,255,1),7px_7px_20px_0px_rgba(0,0,0,0.4),4px_4px_5px_0px_rgba(0,0,0,0.3)];
+}
+
+/* 7 */
+.btn_7 {
+	@apply leading-[42px] p-0 border-[none] before:h-[0%] before:w-0.5 after:w-[0%] after:h-0.5 hover:text-[rgba(251,75,2,1)] hover:before:h-full hover:after:w-full;
+	background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+.btn_7 span {
+	@apply relative block w-full h-full before:w-0.5 before:h-[0%] after:h-0.5 after:w-[0%] hover:before:h-full hover:after:w-full;
+}
+.btn_7:before,
+.btn_7:after {
+	@apply absolute content-[""] shadow-[-7px_-7px_20px_0px_rgba(255,255,255,0.9),-4px_-4px_5px_0px_rgba(255,255,255,0.9),7px_7px_20px_0px_rgba(0,0,0,0.2),4px_4px_5px_0px_rgba(0,0,0,0.3)] transition-all duration-[0.3s] ease-[ease] right-0 bottom-0;
+	background: rgba(251, 75, 2, 1);
+}
+.btn_7:hover {
+	background: transparent;
+}
+.btn_7 span:before,
+.btn_7 span:after {
+	@apply absolute content-[""] shadow-[-7px_-7px_20px_0px_rgba(255,255,255,0.9),-4px_-4px_5px_0px_rgba(255,255,255,0.9),7px_7px_20px_0px_rgba(0,0,0,0.2),4px_4px_5px_0px_rgba(0,0,0,0.3)] transition-all duration-[0.3s] ease-[ease] left-0 top-0;
+	background: rgba(251, 75, 2, 1);
+}
+
+/* 8 */
+.btn_8 {
+	@apply bg-[#f0ecfc] bg-[linear-gradient(315deg,#f0ecfc_0%,#c797eb_74%)] leading-[42px] p-0 border-[none] before:h-[0%] before:w-0.5 after:w-[0%] after:h-0.5 hover:before:h-full hover:after:w-full;
+}
+.btn_8 span {
+	@apply relative block w-full h-full hover:text-[#c797eb] before:w-0.5 before:h-[0%] after:h-0.5 after:w-[0%] hover:before:h-full hover:after:w-full;
+}
+.btn_8:before,
+.btn_8:after {
+	@apply absolute content-[""] transition-all duration-[0.3s] ease-[ease] right-0 bottom-0;
+	background: #c797eb; /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+				-4px -4px 6px 0 rgba(116, 125, 136, .2), 
+	  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+	  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+}
+.btn_8:hover {
+	background: transparent;
+}
+.btn_8 span:before,
+.btn_8 span:after {
+	@apply absolute content-[""] transition-all duration-[0.3s] ease-[ease] left-0 top-0;
+	background: #c797eb; /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+				-4px -4px 6px 0 rgba(116, 125, 136, .2), 
+	  inset -4px -4px 6px 0 rgba(255,255,255,.5),
+	  inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+}
+
+/* 9 */
+.btn_9 {
+	@apply transition-all duration-[0.3s] ease-[ease] overflow-hidden border-[none] after:absolute after:content-["_"] after:z-[-1] after:w-full after:h-full after:bg-[#1fd1f9] after:bg-[linear-gradient(315deg,#1fd1f9_0%,#b621fe_74%)] after:transition-all after:duration-[0.3s] after:ease-[ease] after:left-0 after:top-0 hover:shadow-[4px_4px_6px_0_rgba(255,255,255,0.5),-4px_-4px_6px_0_rgba(116,125,136,0.2),inset_-4px_-4px_6px_0_rgba(255,255,255,0.5),inset_4px_4px_6px_0_rgba(116,125,136,0.3)] hover:text-white hover:after:rotate-180 hover:after:shadow-[4px_4px_6px_0_rgba(255,255,255,0.5),-4px_-4px_6px_0_rgba(116,125,136,0.2),inset_-4px_-4px_6px_0_rgba(255,255,255,0.5),inset_4px_4px_6px_0_rgba(116,125,136,0.3)] hover:after:scale-[2];
+}
+.btn_9:hover {
+	background: transparent;
+}
+.btn_9:hover:after {
+	-webkit-transform: scale(2) rotate(180deg);
+}
+
+/* 10 */
+.btn_10 {
+	@apply text-white transition-all duration-[0.3s] ease-[ease] overflow-hidden border-[none] after:absolute after:content-["_"] after:z-[-1] after:w-full after:h-full after:transition-all after:duration-[0.3s] after:ease-[ease] after:scale-[0.1] after:left-0 after:top-0 hover:text-white hover:border-[none] hover:after:scale-100;
+	background: rgb(22, 9, 240);
+	background: linear-gradient(0deg, rgba(22, 9, 240, 1) 0%, rgba(49, 110, 244, 1) 100%);
+}
+.btn_10:after {
+	-webkit-transform: scale(0.1);
+}
+.btn_10:hover {
+	background: transparent;
+}
+.btn_10:hover:after {
+	background: rgb(0, 3, 255);
+	background: linear-gradient(0deg, rgba(2, 126, 251, 1) 0%, rgba(0, 3, 255, 1) 100%);
+	-webkit-transform: scale(1);
+}
+
+/* 11 */
+.btn_11 {
+	@apply text-white overflow-hidden border-[none] hover:no-underline hover:text-white before:absolute before:content-[''] before:inline-block before:top-[-180px] before:w-[30px] before:h-full before:bg-white before:animate-btn11 before:left-0 hover:opacity-70 active:shadow-[4px_4px_6px_0_rgba(255,255,255,0.3),-4px_-4px_6px_0_rgba(116,125,136,0.2),inset_-4px_-4px_6px_0_rgba(255,255,255,0.2),inset_4px_4px_6px_0_rgba(0,0,0,0.2)];
+	background: rgb(251, 33, 117);
+	background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
+}
+
+/* 12 */
+.btn_12 {
+	@apply relative shadow-none w-[130px] h-10 leading-[42px] border-[none] right-6 bottom-6;
+	-webkit-perspective: 230px;
+	perspective: 230px;
+}
+.btn_12 span {
+	@apply block absolute w-[130px] h-10 shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5),7px_7px_20px_0px_rgba(0,0,0,0.1),4px_4px_5px_0px_rgba(0,0,0,0.1)] text-center box-border transition-all duration-[0.3s] m-0 rounded-[5px];
+	background: rgb(0, 172, 238);
+	background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+}
+.btn_12 span:nth-child(1) {
+	@apply shadow-[-7px_-7px_20px_0px_#fff9,-4px_-4px_5px_0px_#fff9,7px_7px_20px_0px_#0002,4px_4px_5px_0px_#0001] origin-[50%_50%_-20px];
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+}
+.btn_12 span:nth-child(2) {
+	@apply origin-[50%_50%_-20px];
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-webkit-transform-origin: 50% 50% -20px;
+	-moz-transform-origin: 50% 50% -20px;
+}
+.btn_12:hover span:nth-child(1) {
+	@apply shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5),7px_7px_20px_0px_rgba(0,0,0,0.1),4px_4px_5px_0px_rgba(0,0,0,0.1)];
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.btn_12:hover span:nth-child(2) {
+	@apply shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5),7px_7px_20px_0px_rgba(0,0,0,0.1),4px_4px_5px_0px_rgba(0,0,0,0.1)] text-transparent;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+}
+
+/* 13 */
+.btn_13 {
+	@apply bg-[#89d8d3] bg-[linear-gradient(315deg,#89d8d3_0%,#03c8a8_74%)] z-[1] border-[none] after:absolute after:content-[""] after:w-full after:h-0 after:z-[-1] after:bg-[#4dccc6] after:bg-[linear-gradient(315deg,#4dccc6_0%,#96e4df_74%)] after:shadow-[-7px_-7px_20px_0px_#fff9,-4px_-4px_5px_0px_#fff9,7px_7px_20px_0px_#0002,4px_4px_5px_0px_#0001] after:transition-all after:duration-[0.3s] after:ease-[ease] after:rounded-[5px] after:left-0 after:bottom-0 hover:text-white hover:after:h-full hover:after:top-0 active:top-0.5;
+}
+
+/* 14 */
+.btn_14 {
+	@apply z-[1] border-[none] after:absolute after:content-[""] after:w-full after:h-0 after:z-[-1] after:bg-[#eaf818] after:bg-[linear-gradient(315deg,#eaf818_0%,#f6fc9c_74%)] after:shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5)] after:transition-all after:duration-[0.3s] after:ease-[ease] after:rounded-[5px] after:left-0 after:top-0 hover:text-black hover:after:h-full hover:after:top-auto hover:after:bottom-0 active:top-0.5;
+	background: rgb(255, 151, 0);
+}
+
+/* 15 */
+.btn_15 {
+	@apply z-[1] border-[none] after:absolute after:content-[""] after:w-0 after:h-full after:z-[-1] after:bg-[#663dff] after:shadow-[inset_2px_2px_2px_0px_rgba(255,255,255,0.5),7px_7px_20px_0px_rgba(0,0,0,0.1),4px_4px_5px_0px_rgba(0,0,0,0.1)] after:transition-all after:duration-[0.3s] after:ease-[ease] after:rounded-[5px] after:right-0 after:top-0 hover:text-white hover:after:w-full hover:after:left-0 active:top-0.5;
+	background: #b621fe;
+}
+
+/* 16 */
+.btn_16 {
+	@apply text-black border-[none] after:absolute after:content-[""] after:w-0 after:h-full after:z-[-1] after:shadow-[-7px_-7px_20px_0px_#fff9,-4px_-4px_5px_0px_#fff9,7px_7px_20px_0px_#0002,4px_4px_5px_0px_#0001] after:transition-all after:duration-[0.3s] after:ease-[ease] after:left-0 after:top-0 hover:text-black hover:after:w-full hover:after:left-auto hover:after:right-0 active:top-0.5;
+}
+.btn_16:after {
+	direction: rtl;
+}
